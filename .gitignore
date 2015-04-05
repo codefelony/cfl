@@ -1,0 +1,4 @@
+*.lnk
+*.txt
+.DS_Store
+__MACOSX/

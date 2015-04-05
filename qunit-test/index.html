@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>CFL test with QUnit</title>
+        <link rel="stylesheet" href="resources/qunit.css">
+        <script src="../cfl.user.js"></script>
+        <script type="text/javascript">
+            function id(q) {
+                return document.getElementById(q);
+            }
+        </script>
+    </head>
+
+    <body>
+        <div id="qunit"></div>
+        <div id="qunit-fixture">
+            <div id="test-p-container">
+                <p id="test-p">Hello, I'm test-p</p>
+            </div>
+            <input type="checkbox" name="some-checkbox" id="some-checkbox" />
+            <div id="w400px" class="skinny" style="width: 400px;">
+                hello
+            </div>
+            <div id="h400px" class="skinny" style="height: 400px;">
+                hello
+            </div>
+            <select id="select">
+                <option value="one">One</option>
+                <option value="two" selected>Two</option>
+                <option value="three">Three</option>
+            </select>
+            <input type="text" value="foo" id="textbox" />
+        </div>
+
+        <script src="resources/qunit.js"></script>
+        <script src="test.js"></script>
+    </body>
+</html>
